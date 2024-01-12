@@ -37,7 +37,7 @@ app.post("/api/paystack", (req, res) => {
     path: "https://api.paystack.co/transaction/initialize",
     method: "POST",
     headers: {
-      Authorization: "Bearer sk_test_ca34e430ef15f2e2020d56196dc2f1e0fa14f248",
+      Authorization: process.env.TEST_KEY,
       "Content-Type": "application/json",
     },
   }
